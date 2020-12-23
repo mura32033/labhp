@@ -1,11 +1,61 @@
 $white: #fff;
-$black: #333;
-$primary: #42a4f5;
-$secondary: #f59342;
-$tertiary: #f542a4;
+$black: #333; /*.black60*/
+$primary: #42a4f5; /*.primary60*/
+$secondary: #f59342; /*.secondary60*/
+$tertiary: #f542a4; /*.tertiary60*/
 $font-size-std: 16px;
 $height: 100px;
 $width100v: 100vw;
 $marginBottom: 20px;
 $navitem: 5;
 $grey: lighten($black, 30%);
+
+
+
+$blacks: #D6D6D6, #B6B6B6, #959595, #747474, #545454, #333333, #2D2D2D, #262626, #202020, #1A1A1A;
+$black10: #D6D6D6;
+$black20: #B6B6B6;
+$black30: #959595;
+$black40: #747474;
+$black50: #545454;
+$black60: #333333;
+$black70: #2D2D2D;
+$black80: #262626;
+$black90: #202020;
+$black100: #1A1A1A;
+
+$primarys: #EFD0FF, #CDAEFF, #9E8FFF, #7281FF, #598EFE, #42a4f5, #376DD9, #2D3EBC, #2F239F, #3A1B80;
+$primary10: #EFD0FF;
+$primary20: #CDAEFF;
+$primary30: #9E8FFF;
+$primary40: #7281FF;
+$primary50: #598EFE;
+$primary60: #42a4f5;
+$primary70: #376DD9;
+$primary80: #2D3EBC;
+$primary90: #2F239F;
+$primary100: #3A1B80;
+
+$secondarys:#E9FED8, #E6FDBA, #F0FB9B, #F9ED7D, #F7C660, #f59342, #D9A337, #BCAB2D, #949F23, #62801B;
+$secondary10: #E9FED8;
+$secondary20: #E6FDBA;
+$secondary30: #F0FB9B;
+$secondary40: #F9ED7D;
+$secondary50: #F7C660;
+$secondary60: #f59342;
+$secondary70: #D9A337;
+$secondary80: #BCAB2D;
+$secondary90: #949F23;
+$secondary100: #62801B;
+
+$tertiarys: #FEEED8, #FDD1BA, #FBA79B, #F97D8A, #F76091, #f542a4, #D9376D, #BC2D3E, #9F2F23, #803A1B;
+$tertiary10: #FEEED8;
+$tertiary20: #FDD1BA;
+$tertiary30: #FBA79B;
+$tertiary40: #F97D8A;
+$tertiary50: #F76091;
+$tertiary60: #f542a4;
+$tertiary70: #D9376D;
+$tertiary80: #BC2D3E;
+$tertiary90: #9F2F23;
+$tertiary100: #803A1B;
