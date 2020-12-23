@@ -80,7 +80,7 @@ header{
   align-items: center;
   justify-content: center;
   padding: 0 5px;
-  border-left: 1px solid $grey;
+  border-left: 1px solid $black40;
   transition: all .5s ease-in-out;
   &:hover{
     background-color: rgba($secondary, .8);
@@ -88,7 +88,7 @@ header{
     transition: all .5s ease-in-out;
   }
   &:last-child{
-    border-right: 1px solid $grey;
+    border-right: 1px solid $black40;
   }
 }
 .lgdw{
@@ -174,7 +174,7 @@ header{
   margin-bottom: $marginBottom;
 }
 .hero_desc{
-  color: $grey;
+  color: $black40;
 }
 .main_section{
   margin-bottom: $marginBottom * 2;
@@ -256,7 +256,7 @@ footer{
   padding-left: 1rem;
 }
 .info_item{
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $black40;
   margin-bottom: $marginBottom;
 }
 .info__title{
@@ -264,7 +264,7 @@ footer{
   flex-direction: column;
   margin-bottom: $marginBottom / 2;
   time{
-    color: $grey;
+    color: $black40;
     font-size: $font-size-std * .8;
   }
   span{
@@ -279,7 +279,7 @@ footer{
 /*Grid layout*/
 body{
   display: grid;
-  grid-template-columns: 5px 1fr 5px;
+  grid-template-columns: 10px 1fr 10px;
   grid-template-rows: 50px 200px 20px auto auto 20px 50px;
 }
 header{
