@@ -232,8 +232,14 @@ header{
     }
   }
 }
+aside{
+  display: none;
+}
 .sidebar_section{
-  margin-bottom: $marginBottom * 2;
+  margin-bottom: $marginBottom;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 .sidebar_section__title{
   border-bottom: 1px solid $primary;
@@ -277,6 +283,7 @@ footer{
     }
   }
 }
+
 /*====== Components ======*/
 .card-cont{
   display: grid;
@@ -312,6 +319,7 @@ footer{
   width: 95%;
 }
 .card_foot{
+  margin-top: auto;
   .card_foot__link{
     display: flex;
     align-items: center;
@@ -333,6 +341,9 @@ footer{
 .info_item{
   border-bottom: 1px solid $black40;
   margin-bottom: $marginBottom;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 .info__title{
   display: flex;
@@ -399,6 +410,9 @@ footer{
   }
   .smdw{
     display: none;
+  }
+  aside{
+    display: block;
   }
   .foot_sitemap{
     display: flex;
