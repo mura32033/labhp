@@ -28,6 +28,9 @@ h4{
 h5{
   font-size: $font-size-std;
 }
+ul, li{
+  line-height: 1.5rem;
+}
 img{
   width: 100%;
 }
@@ -255,7 +258,10 @@ footer{
 .foot_items{
   align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+.foot_copyright{
+  margin: 25px 0 0;
 }
 .foot_sitemap{
   display: none;
@@ -264,6 +270,7 @@ footer{
   margin-right: auto;
   ul{
     margin-right: 3rem;
+    width: 120px;
     &:last-child{
       margin-right: 0;
     }
@@ -271,7 +278,6 @@ footer{
   li{
     font-size: .8rem;
     padding-left: .5rem;
-    margin-bottom: .25rem;
     &:first-child{
       border-bottom: 1px solid $primary;
       font-size: 1rem;
