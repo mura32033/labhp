@@ -31,6 +31,50 @@ h5{
 img{
   width: 100%;
 }
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  margin-right: 5rem;
+}
+textarea{
+  resize: none;
+}
+.form_input{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: $marginBottom;
+}
+.form_component{
+  border-bottom: 1px solid $black30;
+  line-height: 1rem;
+  margin-left: auto;
+  padding: 1rem .5rem;
+  width: 100%;
+  max-width: 500px;
+  &:focus{
+    background-color: $primary10;
+    border-bottom-color: $black60;
+    border-bottom-width: 2px;
+  }
+  &:required:invalid{
+    border-bottom-color: $secondary90;
+    border-bottom-width: 2px;
+  }
+}
+.form_button{
+  border: 1px solid $black;
+  border-radius: 5px;
+  margin-left: auto;
+  padding: .5rem 1rem;
+  &:hover{
+    background-color: $primary;
+    border-color: transparent;
+    color: $white;
+  }
+}
 
 /*====== Navigation ======*/
 header{
@@ -202,6 +246,37 @@ footer{
   color: $white;
   align-items: center;
 }
+.foot_items{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.foot_sitemap{
+  display: none;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  ul{
+    margin-right: 3rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  li{
+    font-size: .8rem;
+    padding-left: .5rem;
+    margin-bottom: .25rem;
+    &:first-child{
+      border-bottom: 1px solid $primary;
+      font-size: 1rem;
+      padding: 0 1rem 1px 0;
+      margin-bottom: .5rem;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
 /*====== Components ======*/
 .card-cont{
   display: grid;
@@ -325,12 +400,15 @@ footer{
   .smdw{
     display: none;
   }
+  .foot_sitemap{
+    display: flex;
+  }
 
   /*Grid Layout*/
   body{
     display: grid;
     grid-template-columns: minmax(30px, 1fr) 600px 30px 200px minmax(30px, 1fr);
-    grid-template-rows: 100px 300px 40px auto 40px 100px;
+    grid-template-rows: 100px 300px 40px auto 40px auto;
   }
   header{
     grid-column: 1 / -1;
@@ -366,13 +444,14 @@ footer{
     display: grid;
     grid-template-columns: inherit;
     grid-template-rows: auto;
+    padding: 25px 0;
   }
 }
 @media (min-width: 1150px){
   body{
     display: grid;
     grid-template-columns: minmax(50px, 1fr) 700px 50px 300px minmax(50px, 1fr);
-    grid-template-rows: 100px 300px 40px auto 40px 100px;
+    grid-template-rows: 100px 300px 40px auto 40px auto;
   }
   header{
     grid-column: 1 / -1;
